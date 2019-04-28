@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+
+  <!-- 👍 YOUR HTML HERE 👍 -->
+
+ <button onclick="rest(hero)"> 
+  <img id= "inn"  src="/Users/nizzlybear/Desktop/codaisseur/week-1/bb-herogame-starter-master/rest.jpeg" alt="resting moose">
+</button>
+
+  <button onclick="pickUpItem(hero, hero.weapon)">
+    <img id="dagger"  src="/Users/nizzlybear/Desktop/codaisseur/week-1/bb-herogame-starter-master/dagger.jpeg" alt="decorated knife">
+  </button>
+
+  <button onclick="equipWeapon(hero)">
+    <img id="bag"  src="/Users/nizzlybear/Desktop/codaisseur/week-1/bb-herogame-starter-master/bag.jpg" alt="orange bag">
+  </button>
+
+ <ul id="heroobject">
+ </ul>
+ <h4 id= "herotitle"></h4> 
+ <form>
+    <input id="inputField" type="text">
+    <input type="submit">
+  </form>
+  
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+
+</body>
+</html>
